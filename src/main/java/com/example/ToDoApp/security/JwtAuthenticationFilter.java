@@ -28,7 +28,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException {
         String jwt = parseJwt(request);
-        System.out.println("JWT Token: " + jwt); // Log JWT for debugging
+        System.out.println("JWT Token: " + jwt);
 
         if (jwt != null && jwtUtils.validateJwtToken(jwt)) {
             String email = jwtUtils.getEmailFromJwtToken(jwt);
@@ -39,7 +39,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
             authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
             SecurityContextHolder.getContext().setAuthentication(authentication);
-            System.out.println("User authenticated: " + email); // Log user authentication
+            System.out.println("User authenticated: " + email);
         } else {
             System.out.println("User not authenticated");
         }

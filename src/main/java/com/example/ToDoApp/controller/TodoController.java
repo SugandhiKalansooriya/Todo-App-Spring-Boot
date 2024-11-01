@@ -34,10 +34,6 @@ public class TodoController {
     }
 
 
-//    @GetMapping
-//    public List<Todo> getTodos(@AuthenticationPrincipal AppUser user) {
-//        return todoRepository.findByUser(user);
-//    }
 @GetMapping
 public List<Todo> getTodos(@AuthenticationPrincipal UserDetails userDetails) {
     if (userDetails == null) {

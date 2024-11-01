@@ -15,7 +15,7 @@ public class Todo {
     @JoinColumn(name = "user_id", nullable = false)
     private AppUser user;
 
-    // Getters and Setters
+
     public Long getId() {
         return id;
     }
