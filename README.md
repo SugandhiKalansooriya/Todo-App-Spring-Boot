@@ -3,7 +3,7 @@ Replace your spring.datasource.username and
              spring.datasource.password
              and other application propertis if any.
 Run ToDoAppApplication.java file
-Check Rest Apis with postmon
+Check REST APIS with postmon
 
      * Register a User
      
