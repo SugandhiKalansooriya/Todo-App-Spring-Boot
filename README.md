@@ -1,9 +1,9 @@
-clone the project
-replace your spring.datasource.username and 
+Clone the project
+Replace your spring.datasource.username and 
              spring.datasource.password
-             and other application propertis if any
-run ToDoAppApplication.java file
-check Rest Apis with postmon
+             and other application propertis if any.
+Run ToDoAppApplication.java file
+Check Rest Apis with postmon
 
      * Register a User
      
