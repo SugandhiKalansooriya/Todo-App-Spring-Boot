@@ -31,7 +31,6 @@ Check REST APIS with postmon
     }
 
    
-   
    * Create a Todo
    
    URL: http://localhost:8080/todos
@@ -52,13 +51,13 @@ Check REST APIS with postmon
     Authorization: Bearer YOUR_JWT_TOKEN (replace with your actual token)
 
 
-   * Update a Todo
+  * Update a Todo
      
-   URL: http://localhost:8080/todos/1 (replace 1 with the actual Todo ID)
-   Method: PUT
-   Headers:
+  URL: http://localhost:8080/todos/1 (replace 1 with the actual Todo ID)
+  Method: PUT
+  Headers:
        Authorization: Bearer YOUR_JWT_TOKEN (replace with your actual token)
-    Body: {
+  Body: {
     "title": "Buy Groceries and Snacks",
     "description": "Milk, Bread, Eggs, Chips"
     }
